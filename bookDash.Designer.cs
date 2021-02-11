@@ -253,7 +253,7 @@ namespace LibarySystem
             this.Controls.Add(this.pictureBox1);
             this.Name = "bookDash";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "bookDash";
+            this.Text = "Add book";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();

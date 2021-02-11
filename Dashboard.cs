@@ -41,5 +41,20 @@ namespace LibarySystem
                 f2.Show();
             }
         }
+        private void viewBooks_Click(object sender, EventArgs e)
+        {
+            ViewBook vb = new ViewBook();
+            vb.Show();
+        }
+        private void addStudentDrop_Click(object sender, EventArgs e)
+        {
+            AddStudent ast = new AddStudent();
+            ast.Show();
+        }
+        private void viewStudentDrop_Click(object sender, EventArgs e)
+        {
+            ViewStudentInformation vsi = new ViewStudentInformation();
+            vsi.Show();
+        }
     }
 }

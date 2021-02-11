@@ -35,8 +35,8 @@ namespace LibarySystem
             this.addBookDrop = new System.Windows.Forms.ToolStripMenuItem();
             this.viewBooks = new System.Windows.Forms.ToolStripMenuItem();
             this.dashStudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.addStudent = new System.Windows.Forms.ToolStripMenuItem();
-            this.viewStudent = new System.Windows.Forms.ToolStripMenuItem();
+            this.addStudentDrop = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewStudentDrop = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
@@ -84,39 +84,44 @@ namespace LibarySystem
             // 
             // viewBooks
             // 
+            this.viewBooks.DoubleClickEnabled = true;
             this.viewBooks.Image = ((System.Drawing.Image)(resources.GetObject("viewBooks.Image")));
             this.viewBooks.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.viewBooks.Name = "viewBooks";
             this.viewBooks.Size = new System.Drawing.Size(219, 56);
             this.viewBooks.Text = "View books";
+            this.viewBooks.Click += new System.EventHandler(this.viewBooks_Click);
             // 
             // dashStudent
             // 
             this.dashStudent.BackColor = System.Drawing.Color.OldLace;
             this.dashStudent.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.addStudent,
-            this.viewStudent});
+            this.addStudentDrop,
+            this.viewStudentDrop});
             this.dashStudent.Image = ((System.Drawing.Image)(resources.GetObject("dashStudent.Image")));
             this.dashStudent.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.dashStudent.Name = "dashStudent";
             this.dashStudent.Size = new System.Drawing.Size(124, 54);
             this.dashStudent.Text = "Student";
             // 
-            // addStudent
+            // addStudentDrop
             // 
-            this.addStudent.Image = ((System.Drawing.Image)(resources.GetObject("addStudent.Image")));
-            this.addStudent.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.addStudent.Name = "addStudent";
-            this.addStudent.Size = new System.Drawing.Size(237, 56);
-            this.addStudent.Text = "Add student";
+            this.addStudentDrop.Image = ((System.Drawing.Image)(resources.GetObject("addStudentDrop.Image")));
+            this.addStudentDrop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.addStudentDrop.Name = "addStudentDrop";
+            this.addStudentDrop.Size = new System.Drawing.Size(237, 56);
+            this.addStudentDrop.Text = "Add student";
+            this.addStudentDrop.Click += new System.EventHandler(this.addStudentDrop_Click);
             // 
-            // viewStudent
+            // viewStudentDrop
             // 
-            this.viewStudent.Image = ((System.Drawing.Image)(resources.GetObject("viewStudent.Image")));
-            this.viewStudent.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.viewStudent.Name = "viewStudent";
-            this.viewStudent.Size = new System.Drawing.Size(237, 56);
-            this.viewStudent.Text = "View student info";
+            this.viewStudentDrop.DoubleClickEnabled = true;
+            this.viewStudentDrop.Image = ((System.Drawing.Image)(resources.GetObject("viewStudentDrop.Image")));
+            this.viewStudentDrop.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.viewStudentDrop.Name = "viewStudentDrop";
+            this.viewStudentDrop.Size = new System.Drawing.Size(237, 56);
+            this.viewStudentDrop.Text = "View student info";
+            this.viewStudentDrop.Click += new System.EventHandler(this.viewStudentDrop_Click);
             // 
             // toolStripMenuItem3
             // 
@@ -185,9 +190,11 @@ namespace LibarySystem
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem viewBooks;
-        private System.Windows.Forms.ToolStripMenuItem addStudent;
+        private System.Windows.Forms.ToolStripMenuItem addStudentStrip;
         private System.Windows.Forms.ToolStripMenuItem viewStudent;
         private System.Windows.Forms.ToolStripMenuItem dashExit;
         private System.Windows.Forms.ToolStripMenuItem dashStudent;
+        private System.Windows.Forms.ToolStripMenuItem addStudentDrop;
+        private System.Windows.Forms.ToolStripMenuItem viewStudentDrop;
     }
 }
