@@ -37,9 +37,9 @@ namespace LibarySystem
             this.dashStudent = new System.Windows.Forms.ToolStripMenuItem();
             this.addStudentDrop = new System.Windows.Forms.ToolStripMenuItem();
             this.viewStudentDrop = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.issueBooksMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.returnbooksMenu = new System.Windows.Forms.ToolStripMenuItem();
+            this.completeDetailMenu = new System.Windows.Forms.ToolStripMenuItem();
             this.dashExit = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -51,9 +51,9 @@ namespace LibarySystem
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.dashBooks,
             this.dashStudent,
-            this.toolStripMenuItem3,
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
+            this.issueBooksMenu,
+            this.returnbooksMenu,
+            this.completeDetailMenu,
             this.dashExit});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -123,30 +123,32 @@ namespace LibarySystem
             this.viewStudentDrop.Text = "View student info";
             this.viewStudentDrop.Click += new System.EventHandler(this.viewStudentDrop_Click);
             // 
-            // toolStripMenuItem3
+            // issueBooksMenu
             // 
-            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
-            this.toolStripMenuItem3.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(149, 54);
-            this.toolStripMenuItem3.Text = "Issue books";
+            this.issueBooksMenu.DoubleClickEnabled = true;
+            this.issueBooksMenu.Image = ((System.Drawing.Image)(resources.GetObject("issueBooksMenu.Image")));
+            this.issueBooksMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.issueBooksMenu.Name = "issueBooksMenu";
+            this.issueBooksMenu.Size = new System.Drawing.Size(149, 54);
+            this.issueBooksMenu.Text = "Issue books";
+            this.issueBooksMenu.Click += new System.EventHandler(this.issueBooksMenu_Click);
             // 
-            // toolStripMenuItem4
+            // returnbooksMenu
             // 
-            this.toolStripMenuItem4.BackColor = System.Drawing.Color.OldLace;
-            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
-            this.toolStripMenuItem4.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(160, 54);
-            this.toolStripMenuItem4.Text = "Return books";
+            this.returnbooksMenu.BackColor = System.Drawing.Color.OldLace;
+            this.returnbooksMenu.Image = ((System.Drawing.Image)(resources.GetObject("returnbooksMenu.Image")));
+            this.returnbooksMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.returnbooksMenu.Name = "returnbooksMenu";
+            this.returnbooksMenu.Size = new System.Drawing.Size(160, 54);
+            this.returnbooksMenu.Text = "Return books";
             // 
-            // toolStripMenuItem5
+            // completeDetailMenu
             // 
-            this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
-            this.toolStripMenuItem5.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(218, 54);
-            this.toolStripMenuItem5.Text = "Complete book detail";
+            this.completeDetailMenu.Image = ((System.Drawing.Image)(resources.GetObject("completeDetailMenu.Image")));
+            this.completeDetailMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
+            this.completeDetailMenu.Name = "completeDetailMenu";
+            this.completeDetailMenu.Size = new System.Drawing.Size(218, 54);
+            this.completeDetailMenu.Text = "Complete book detail";
             // 
             // dashExit
             // 
@@ -186,7 +188,7 @@ namespace LibarySystem
         private System.Windows.Forms.ToolStripMenuItem addBookDrop;
         private System.Windows.Forms.ToolStripMenuItem booksMenu;
         private System.Windows.Forms.ToolStripMenuItem dashtudent;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem Issuebook;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem viewBooks;
@@ -196,5 +198,8 @@ namespace LibarySystem
         private System.Windows.Forms.ToolStripMenuItem dashStudent;
         private System.Windows.Forms.ToolStripMenuItem addStudentDrop;
         private System.Windows.Forms.ToolStripMenuItem viewStudentDrop;
+        private System.Windows.Forms.ToolStripMenuItem issueBooksMenu;
+        private System.Windows.Forms.ToolStripMenuItem returnbooksMenu;
+        private System.Windows.Forms.ToolStripMenuItem completeDetailMenu;
     }
 }

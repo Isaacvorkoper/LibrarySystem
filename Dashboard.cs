@@ -56,5 +56,10 @@ namespace LibarySystem
             ViewStudentInformation vsi = new ViewStudentInformation();
             vsi.Show();
         }
+        private void issueBooksMenu_Click(object sender, EventArgs e)
+        {
+            issueBooks ib = new issueBooks();
+            ib.Show();
+        }
     }
 }
