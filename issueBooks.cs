@@ -55,7 +55,7 @@ namespace LibarySystem
                 DA.Fill(DS);
 
                 //Counter of issued books to a student
-                cmd.CommandText = "select coun(stdEnroll) from irBook where stdEnroll= '" + eid + "' and bookReturnDate is null";
+                cmd.CommandText = "select count(stdEnroll) from irBook where stdEnroll= '" + eid + "' and bookReturnDate is null";
                 SqlDataAdapter DA2 = new SqlDataAdapter(cmd);
                 DataSet DS2 = new DataSet();
                 DA.Fill(DS2);
@@ -93,7 +93,7 @@ namespace LibarySystem
                     String sname = txtName.Text;
                     String sdep = txtDepartment.Text;
                     String sem = txtSemester.Text;
-                    Int64 contact = Int64.Parse(txtSemester.Text);
+                    Int64 contact = Int64.Parse(txtContact.Text);
                     string email = txtEmail.Text;
                     String bookname = comboBoxBooks.Text;
                     String bookIssueDate = dateTimePicker.Text;
@@ -105,7 +105,7 @@ namespace LibarySystem
                     cmd.Connection = con;
                     con.Open();
 
-                    cmd.CommandText = cmd.CommandText = "insert into irBook (stdEnroll,stdName,stdDep,stdSem,stdContact,stdEmail,bookName,bookIssueDate) values ('"+enroll+ "','"+sname+ "','"+sem+ "','"+contact+ "','"+email+ "','"+bookname+ "','"+bookIssueDate+"')";
+                    cmd.CommandText = cmd.CommandText = "insert into irBook (stdEnroll,stdName,stdDep,stdSem,stdContact,stdEmail,bookName,bookIssueDate) values ('"+enroll+ "','"+sname+ "','"+sdep+"','"+sem+ "','"+contact+ "','"+email+ "','"+bookname+ "','"+bookIssueDate+"')";
                     cmd.ExecuteNonQuery();
                     con.Close();
 
