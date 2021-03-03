@@ -66,5 +66,10 @@ namespace LibarySystem
             ReturnBook rb = new ReturnBook();
             rb.Show();
         }
+        private void completeDetailMenu_Click(object sender, EventArgs e)
+        {
+            CompleteBookDetails cbd = new CompleteBookDetails();
+            cbd.Show();
+        }
     }
 }

@@ -146,11 +146,13 @@ namespace LibarySystem
             // 
             // completeDetailMenu
             // 
+            this.completeDetailMenu.DoubleClickEnabled = true;
             this.completeDetailMenu.Image = ((System.Drawing.Image)(resources.GetObject("completeDetailMenu.Image")));
             this.completeDetailMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.completeDetailMenu.Name = "completeDetailMenu";
             this.completeDetailMenu.Size = new System.Drawing.Size(218, 54);
             this.completeDetailMenu.Text = "Complete book detail";
+            this.completeDetailMenu.Click += new System.EventHandler(this.completeDetailMenu_Click);
             // 
             // dashExit
             // 
