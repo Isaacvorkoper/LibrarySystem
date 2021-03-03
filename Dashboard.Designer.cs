@@ -136,11 +136,13 @@ namespace LibarySystem
             // returnbooksMenu
             // 
             this.returnbooksMenu.BackColor = System.Drawing.Color.OldLace;
+            this.returnbooksMenu.DoubleClickEnabled = true;
             this.returnbooksMenu.Image = ((System.Drawing.Image)(resources.GetObject("returnbooksMenu.Image")));
             this.returnbooksMenu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
             this.returnbooksMenu.Name = "returnbooksMenu";
             this.returnbooksMenu.Size = new System.Drawing.Size(160, 54);
             this.returnbooksMenu.Text = "Return books";
+            this.returnbooksMenu.Click += new System.EventHandler(this.returnbooksMenu_Click);
             // 
             // completeDetailMenu
             // 
